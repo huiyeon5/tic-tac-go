@@ -3,11 +3,11 @@ package main
 import (
 	"os"
 
-	util "github.com/huiyeon5/tic-tac-go/pkg"
+	"github.com/huiyeon5/tic-tac-go/pkg/board"
 )
 
 func main() {
-	tttBoard := util.NewBoard()
+	tttBoard := board.NewBoard()
 	tttBoard.Display(os.Stdin)
 	tttBoard.Mark("X", 0)
 	tttBoard.Mark("X", 2)
